@@ -16,7 +16,7 @@ mkdir -p /mnt/etc/nixos
 cd /mnt/etc/nixos
 
 # Клонируем репо (в текущую директорию)
-git clone https://github.com/SlavaMarkovic/nix-configuration.git .
+git clone https://github.com/SlavaMarkovich/NixOS-Dotfiles.git .
 
 # Копируем сгенерированный железом конфиг в папку хоста
 cp /etc/nixos/hardware-configuration.nix ./hosts/NixOwO/
@@ -48,7 +48,7 @@ nixos-enter --root /mnt -c "passwd slava"
 cd /etc/nixos
 
 # Исправляем ругань гита на права доступа
-git config --global --add safe.directory /etc/nixos/nix-configuration
+git config --global --add safe.directory /etc/nixos/NixOS-Dotfiles
 
 # Разворачиваем Home Manager
 nix run home-manager -- switch --flake .#slava
@@ -62,5 +62,6 @@ nix run home-manager -- switch --flake .#slava
 * `sudo nixos-rebuild switch --flake .` — применить изменения системы.
 * `home-manager switch --flake .` — применить изменения юзера.
 * `nix flake update` — обновить все зависимости (input-ы).
+* `sudo chown -R slava:users /etc/nixos/NixOS-Dotfiles` — вернуть права на конфигурацию
 
 **P.S.** Если что-то сломалось — вини во всем системд. Удачи! 🍀
