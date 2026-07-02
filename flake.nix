@@ -10,6 +10,9 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: let

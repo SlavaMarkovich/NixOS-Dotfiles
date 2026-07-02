@@ -2,17 +2,21 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    # Packages in each category are sorted alphabetically
+    # Packages in each category are sorted alphabetically (no)
 
     # Desktop apps
-    spotify
-    google-chrome
     telegram-desktop
-    vscodium
-
+    vscode
+    firefox
+    obsidian
+    discord
+    
     # CLI utils
     btop
     fastfetch
+
+    # Games
+    prismlauncher
   ];
 
 }

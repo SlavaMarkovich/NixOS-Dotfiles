@@ -14,15 +14,6 @@
     ];
   };
 
-  environment.sessionVariables = {
-    # Указываем системе использовать i965 для декодирования видео
-    LIBVA_DRIVER_NAME = "i965";
-    
-    # Рекомендуется для Bay Trail: современный драйвер 'crocus' вместо старого 'i965'
-    # Он дает лучшую производительность и стабильность в 3D (OpenGL)
-    MESA_LOADER_DRIVER_OVERRIDE = "crocus";
-  };
-
   # Опционально: полезные утилиты для мониторинга в системных пакетах
   environment.systemPackages = with pkgs; [
     intel-gpu-tools # Команда 'intel_gpu_top' покажет реальную нагрузку на видеоядро
