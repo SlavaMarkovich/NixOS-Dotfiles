@@ -7,7 +7,6 @@
     # Desktop apps
     telegram-desktop
     vscode
-    firefox
     obsidian
     discord
     
