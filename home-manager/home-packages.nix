@@ -13,6 +13,8 @@
     # CLI utils
     btop
     fastfetch
+    curl
+    wget
 
     # Games
     prismlauncher
