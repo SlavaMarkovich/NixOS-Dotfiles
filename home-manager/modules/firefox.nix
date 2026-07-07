@@ -1,6 +1,8 @@
 { pkgs, ... }: {
-  programs.firefox = {
+  programs.brave = {
     enable = true;
-    nativeMessagingHosts = [ pkgs.kdePackages.plasma-browser-integration ];
+    nativeMessagingHosts = [
+      pkgs.kdePackages.plasma-browser-integration
+    ];
   };
 }
