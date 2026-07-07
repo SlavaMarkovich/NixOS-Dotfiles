@@ -2,6 +2,6 @@
   imports = [
     ./spicetify.nix
     ./git.nix
-    ./firefox.nix
+    ./brave.nix
   ];
 }
